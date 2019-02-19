@@ -34,19 +34,32 @@ public class Persona {
     }
 }
 public class Profesor extends Persona{
+    /**
+     * Variables de la clase Profesor
+     */
     String srt;
     int edad;
     String numeroDeTelefono;
     List<Prestamo> prestamos;
     
+    /**
+     * Para indicar el numero de telefono del profesor
+     * @param numeroDeTelefono 
+     */
     public Profesor(String numeroDeTelefono){
         super(numeroDeTelefono);
     }
+    /**
+     * Metodo pra imprimir la informacion del profesor
+     */
     public void printInformacionPersonal(){
         System.out.println("Nombre: "+srt);
         System.out.println("Edad: "+edad);
         System.out.println("Teléfono: "+this.numeroDeTelefono);
     }
+    /**
+     * Metodo para imprimir la informaciondel profesor si tiene prestamos
+     */
     public void printTodaLaInformacion(){
         System.out.println("Nombre: "+srt);
         System.out.println("Edad: "+edad);
