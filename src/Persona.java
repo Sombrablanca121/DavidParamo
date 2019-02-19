@@ -1,20 +1,34 @@
-/* Este codigo define la clase Persona y la clase Profesor como extension de la primera.
-
-Un profesor es una persona dedicada a la docencia, tanto en colegios públicos como privados.
-
-El código ha sido hecho por Carlos Hernández en mayo del 2019*/
+/**
+ * Clase Persona y Clase Profesor que hereda de persona
+ * @author Carlos Hernandez
+ * @since Mayo 2019
+ */
 public class Persona {
+    /**
+     * Variable donde se introducirá el numero de telefono
+     */
     String numeroDeTelefono;
     
+    /**
+     * Metodo Persona para llamarla a la clase
+     * @param numeroDeTelefono Para el numero de telefono de la persona
+     */
     public Persona(String numeroDeTelefono){
         super();
         this.numeroDeTelefono=numeroDeTelefono;
     }
     
+    /**
+     * Metodo get para llamar a la variable
+     * @return numero de telefono de la persona
+     */
     public String getNumeroDeTelefono(){
         return numeroDeTelefono;
     }
-    
+    /**
+     * Para darle valor al numeo de telefono de la persona
+     * @param numeroDeTelefono Numero de telefono de la persona
+     */
     public void setNumeroDeTelefono(String numeroDeTelefono){
         this.numeroDeTelefono=numeroDeTelefono;
     }
